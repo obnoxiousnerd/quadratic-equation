@@ -45,7 +45,7 @@ const app = new Vue({
               // compile the expression once
               const expression = this.a + "* x * x+" + this.b + "x+" + this.c
               const expr = math.compile(expression)
-        
+              console.log("TCL: draw -> expr", expr)
               // evaluate the expression repeatedly for different values of x
               const xValues = math.range(-10, 10, 0.5).toArray()
               const yValues = xValues.map(function (x) {
